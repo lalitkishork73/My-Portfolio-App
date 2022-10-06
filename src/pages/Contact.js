@@ -36,15 +36,15 @@ const Contact = () => {
             </form>
           </div>
           <div className="w-full flex flex-col text-white justify-center p-5 ">
-            <div className="bg-black/70 backdrop-blur-sm rounded-lg md:p-5   break-all shadow-md hover:scale-100   duration-200 hover:shadow-yellow-500">
+            <div className="bg-black/70 backdrop-blur-sm rounded-lg md:p-5 break-all shadow-md hover:scale-100 duration-200 hover:shadow-yellow-500">
               <div>
-                <h1 className="font-bold text-center">Get In Touch </h1>
+                <h1 className="font-bold text-center p-3">Get In Touch </h1>
               </div>
               <div className="flex">
                 <div className="p-2">
                   <MdPersonOutline />
                 </div>
-                <div>
+                <div className="p-1">
                   <h1 className="font-bold">Name</h1>
                   <h1>LalitKishor Kanojiya</h1>
                 </div>
@@ -53,7 +53,7 @@ const Contact = () => {
                 <div className="p-2">
                   <GoLocation />
                 </div>
-                <div>
+                <div className="p-1">
                   <h1 className="font-bold">Address</h1>
                   <h1>Surat,Gujarat</h1>
                 </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className="p-2">
                   <FiMail />
                 </div>
-                <div>
+                <div className="p-1">
                   <h1 className="font-bold">Email</h1>
                   <h1>lalitkishork73@gmail.com</h1>
                 </div>

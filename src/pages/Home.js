@@ -11,12 +11,11 @@ const Home = () => {
         name="home"
         className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 bg-fixed"
       >
-
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full md:flex-row">
           <div className="flex flex-col justify-center h-full w-full p-2">
             <h1 className="text-white text-4xl  sm:text-7xl font-bold">
-              <span className="text-teal-400 animate-bounce">H</span>
-              <span className="hover:scale-105 duration-200">i</span>
+              <span className="text-teal-400 animate-bounce">न</span>
+              <span className="hover:scale-105 duration-200">मस्ते</span>
               <span className="hover:scale-105 duration-200">!,</span>
               <br />
             </h1>
@@ -52,7 +51,7 @@ const Home = () => {
       </div>
       <div className="h-full bg-black text-white">
         <div>
-          <Quotes/>
+          <Quotes />
         </div>
         <div></div>
       </div>
