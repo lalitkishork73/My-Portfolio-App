@@ -5,12 +5,11 @@ import { NavLink } from "react-router-dom";
 const MenuBar = ({ showMenu, active }) => {
   return (
     <>
-      <nav>
-        <div></div>
+      <nav className="relative h-full w-full">
         <ul
           className={
             active
-              ? "block  py-6 fixed inset-x-0 uppercase bg-black/20 backdrop-blur-lg md:hidden"
+              ? "block  py-6 fixed inset-0 z-10 uppercase bg-black/20 backdrop-blur-lg md:hidden"
               : "hidden"
           }
         >
