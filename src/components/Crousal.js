@@ -14,7 +14,7 @@ const Crousal = () => {
             loop
             muted
           />
-          <div className="w-full h-screen absolute flex justify-center items-center text-white top-0">
+          <div className="w-full h-1/2 absolute flex justify-center items-center text-white top-0">
             <div className="flex flex-col p-5">
               <h1 className="font-bold text-4xl text-center mb-6">
                 Welcome To Projects Session
@@ -26,9 +26,10 @@ const Crousal = () => {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
-      <div className="h-screen bg-blue-200"></div>
+
     </>
   );
 };
