@@ -6,10 +6,12 @@ import Contact from "./pages/Contact.js";
 import About from "./pages/About.js";
 import Project from "./pages/Project.js";
 import Footer from "./components/Footer.js";
+
 function App() {
   return (
     <>
       <BrowserRouter>
+
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

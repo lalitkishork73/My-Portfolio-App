@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import MenuBar from "./MenuBar.js";
 
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const showMenu = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="flex justify-between bg-black  text-white p-4   ">
+      <div className="flex justify-between bg-transparent  text-white p-4   ">
         <div>
           <h1 className="font-signature text-4xl font-bold">
             <span className="text-yellow-500">L</span>alit

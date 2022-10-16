@@ -3,12 +3,14 @@ import Crousal from "../components/Crousal.js";
 import Ptiles from "../components/Ptiles.jsx";
 import { useSelector, useDispatch } from "react-redux";
 import { incNumber, decNumber } from "../actions/action.js";
+import ParticleBG from "../components/ParticleBG.js";
 
 const Project = () => {
   const myState = useSelector((state) => state.changeTheNumber);
   const dispatch = useDispatch();
   return (
     <>
+      <ParticleBG/>
       <Crousal />
       <div className="flex justify-center items-center">
         <div className="border-black border-2 flex">

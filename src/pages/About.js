@@ -2,18 +2,20 @@ import React from "react";
 import Education from "../components/Education.js";
 import Skils from "../components/Skils.js";
 import lalit from "../assets/lalitcolor.png";
+import ParticleBG from "../components/ParticleBG.js";
 
 const About = () => {
   return (
     <>
       <div className="flex flex-col">
+<ParticleBG/>
         <section className=" bg-gradient-to-b from-black to-gray-800 text-white">
           <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full md:flex-row h-full">
             <div className="p-5 w-full">
               <img
                 src={lalit}
                 alt="logo"
-                className="hover:shadow-blue-500 rounded-full border-2 border-t-teal-500  border-l-yellow-500 border-b-teal-500 bo mx-auto w-2/3 md:w-full shadow-lg hover:scale-105 duration-500 bg-gradient-to-t from-green-400 to-blue-500 mt-20"
+                className="hover:shadow-blue-500 rounded-full border-2 border-t-teal-500  border-l-yellow-500 border-b-teal-500 border-r-0 mx-auto w-2/3 md:w-full shadow-lg hover:scale-105 duration-500 bg-gradient-to-t from-green-400 to-blue-500 mt-20"
               />
             </div>
             <div className="w-full">

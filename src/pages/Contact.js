@@ -1,14 +1,20 @@
-import React from "react";
+import React  from "react";
 import SimpleMap from "../components/map.js";
 import { GoLocation } from "react-icons/go";
 import { FiMail } from "react-icons/fi";
 import { MdPersonOutline } from "react-icons/md";
+import ParticleBG from "../components/ParticleBG.js";
+
 
 const Contact = () => {
+
   return (
     <>
-      <section className="h-full w-full flex flex-col">
-        <div className=" flex flex-col md:flex-row  p-5 bg-[url('https://images.pexels.com/photos/219998/pexels-photo-219998.jpeg?cs=srgb&dl=pexels-pixabay-219998.jpg&fm=jpg')] bg-cover">
+    <ParticleBG/>
+      <section className="h-full w-full flex flex-col ">
+        <div className=" flex flex-col md:flex-row  p-5 ">
+          <h1 >Particles</h1>
+
           <div className="w-full sm:p-5 flex md:flex-col ">
             <form
               action="https://formspree.io/f/mgeqzzzv"
@@ -21,7 +27,6 @@ const Contact = () => {
                 placeholder="Name"
                 autoComplete="off"
                 required
-
                 className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
               />
               <input
