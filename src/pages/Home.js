@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <div className="w-full bg-fixed ">
         <ParticleBG />
-        <div className="max-w-screen-lg mx-auto flex flex-col  items-center justify-center  h-full md:flex-row w-full">
+        <div className="max-w-screen-lg mx-auto flex flex-col  items-center justify-center  h-full md:flex-row w-full mt-24">
           <div className=" flex flex-col flex-auto justify-center h-auto w-full p-5 animate__animated animate__fadeInLeft ">
             <h1 className="text-white text-4xl font-bold">
               <span className="text-teal-400 ">न</span>
@@ -46,7 +46,15 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className=""></div>
+        <div className="flex flex-col h-auto w-auto text-white text-center mt-24">
+          <h1 className="text-2xl font-bold">Quotes of The Day</h1>
+          <div className="flex justify-center">
+            <div className="p-2 max-w-lg">
+              <p className="font-extrabold"> "Until humans go die, they never find peace. loresdaaaaaaaaaaaada dasssssssss dsadad asdad a dsda sdasda asdasdasfa s fdsd as asd asdf a sd"</p>
+              <p className="text-right font-semibold"> ~Lalitkishor</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
