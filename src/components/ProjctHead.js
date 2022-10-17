@@ -1,5 +1,5 @@
 import React from "react";
-import sample from "../assets/video.mp4";
+import sample from "../assets/circuit.mp4";
 const ProjctHead = () => {
   return (
     <>
