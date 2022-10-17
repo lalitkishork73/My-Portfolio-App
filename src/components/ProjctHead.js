@@ -5,7 +5,7 @@ const ProjctHead = () => {
     <>
       <div className="">
         <div className="relative ">
-          <div className="absolute w-full h-80 bg-black/50  backdrop-blur-sm"></div>
+          <div className="absolute w-full h-80 bg-black/10  backdrop-blur-sm"></div>
           <video
             src={sample}
             className="videoTag object-cover bg-center w-full h-80"
