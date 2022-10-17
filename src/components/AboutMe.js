@@ -1,5 +1,5 @@
-import React from 'react'
-import lalit from "../assets/lalitcolor.png";   
+import React from "react";
+import lalit from "../assets/lalitcolor.png";
 
 function AboutMe() {
   return (
@@ -35,4 +35,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe
+export default AboutMe;

@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
-import particlesConfig from "./particles-config.js";
 import { loadFull } from "tsparticles";
 
 const ParticleBG = () => {
