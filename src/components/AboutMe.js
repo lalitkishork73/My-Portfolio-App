@@ -15,11 +15,11 @@ function AboutMe() {
           </div>
           <div className="w-full">
             <p className="text-sm p-3 text-justify">
-              Hi, I am LalitKishor Kanojiya, I lives in Surat. I have been
-              completed Bechlor's in Electronics and communication Engneering
-              from Shri Sitarambhai Naranji Patel Institute of Technology and
-              Research Center Bardoli affiliated by Gujarat Technical
-              University.
+              Hi, I am LalitKishor Kanojiya, I lives in Surat. I am Electronics
+              and Communication & Software Engineer. I have been completed
+              Bechlor's in Electronics and communication Engneering from Shri
+              Sitarambhai Naranji Patel Institute of Technology and Research
+              Center Bardoli affiliated by Gujarat Technical University.
             </p>
             <br />
             <p className="text-sm p-3 text-justify">
