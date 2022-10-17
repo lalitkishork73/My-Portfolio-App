@@ -4,29 +4,13 @@ import { FaBars } from "react-icons/fa";
 import MenuBar from "./MenuBar.js";
 
 
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const showMenu = () => {
     setActive(!active);
   };
-  const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "project",
-    },
-    {
-      id: 4,
-      link: "contact",
-    },
-  ];
+
   return (
     <>
       <div className="flex justify-between bg-transparent  text-white p-4   ">
