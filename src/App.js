@@ -6,12 +6,13 @@ import Contact from "./pages/Contact.js";
 import About from "./pages/About.js";
 import Project from "./pages/Project.js";
 import Footer from "./components/Footer.js";
+import ParticleBG from "./components/ParticleBG.js";
 
 function App() {
   return (
     <>
+      
       <BrowserRouter>
-
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,7 +20,7 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   );

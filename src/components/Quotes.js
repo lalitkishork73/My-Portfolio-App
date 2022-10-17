@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 const Quotes = () => {
-  let API = "https://type.fit/api/quotes";
+  let API = "http://api.quotable.io/random";
   const [api, setApi] = useState([]);
-
-  const getRandomObject = () => {
-    const randomObject = api[Math.floor(Math.random() * api.length)];
-  
-  };
 
   const fetchApiData = async (url) => {
     try {
@@ -26,18 +21,14 @@ const Quotes = () => {
 
   return (
     <>
-      <div className="text-white">
-
-
-        {api.map((items, id) => (
-          <div
-            key={items.id}
-            className="border-cyan-500 border-2 h-auto h-82 w-72 flex flex-col items-center p-3 text-white bg-black rounded-lg flex-shrink hover:scale-110 m-2 duration-200"
-          >
-            <h1 className="text-white">{items.text}</h1>
-            <p className="text-white">{items.author}</p>
+      <div className="flex flex-col h-auto w-auto text-white text-center mt-24">
+        <h1 className="text-2xl font-bold">Quotes of The Day</h1>
+        <div className="flex justify-center">
+          <div className="flex flex-col justi items-center p-3 bg-black/20 rounded-lg flex-shrink hover:scale-110 m-2 duration-200 text-center">
+            <h1 className="font-bold text-md p-3">" {api.content} "</h1>
+            <p className="font-bold text-sm p-3">~{api.author}</p>
           </div>
-        ))}
+        </div>
       </div>
     </>
   );
