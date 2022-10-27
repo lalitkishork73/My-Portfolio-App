@@ -8,7 +8,7 @@ const Skils = () => {
       <section>
         <div
           name="experience"
-          className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+          className="bg-gradient-to-b from-gray-800 to-black w-full h-auto"
         >
           <div className="max-w-screen-lg mx-auto p-4 flex flex-col w-full h-full text-white">
             <div>
