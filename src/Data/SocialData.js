@@ -29,4 +29,10 @@ const SocData = [
     img: "",
     url: "",
   },
+  {
+    id: 6,
+    platform: "LeetCode",
+    img: "",
+    url: "",
+  },
 ];

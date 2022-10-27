@@ -3,7 +3,7 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import { siSimpleicons } from 'simple-icons/icons';
-import { ReactJs } from '@icons-pack/react-simple-icons';
+import  ReactJs  from  "../assets/css.png";
 const techs = [
   {
     id: 1,
