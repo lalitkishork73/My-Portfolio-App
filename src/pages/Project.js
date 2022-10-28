@@ -8,6 +8,9 @@ const Project = () => {
     <>
       <ParticleBG />
       <ProjctHead />
+      <div className=""> 
+
+      </div>
 
     </>
   );
