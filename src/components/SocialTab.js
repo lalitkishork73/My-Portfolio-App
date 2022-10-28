@@ -9,7 +9,7 @@ function SocialTab() {
           {
           SocData.map((item) => (
             <a href={item.url} key={item.id}>
-                <img src={item.img} className={`w-20 mx-auto shadow-lg `} />
+                <img src={item.img} className={`w-20 mx-auto hover:scale-110 rounded-full shadow-sm ${item.style} `} />
             </a>
             ))
         }

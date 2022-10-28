@@ -2,12 +2,13 @@ import React from 'react'
 import { GoLocation } from "react-icons/go";
 import { FiMail } from "react-icons/fi";
 import { MdPersonOutline } from "react-icons/md";
+import SocialTab from './SocialTab';
 
 function ContcDetl() {
   return (
     <>
-      <div className="w-full flex flex-col text-white justify-center sm:p-5 ">
-        <div className="bg-black/70 backdrop-blur-sm rounded-lg md:p-5 break-all shadow-md hover:scale-100 duration-200 hover:shadow-yellow-500">
+      <div className="w-full flex flex-col text-white justify-center sm:p-5">
+        <div className="bg-gradient-to-b from-black/70 to-gray-900/70 backdrop-blur-sm rounded-lg md:p-5 break-all shadow-sm hover:scale-100 duration-200 hover:shadow-yellow-500 h-1/2">
           <div>
             <h1 className="font-bold text-center p-3">Get In Touch </h1>
           </div>
@@ -38,6 +39,7 @@ function ContcDetl() {
               <h1>lalitkishork73@gmail.com</h1>
             </div>
           </div>
+        <SocialTab/>  
         </div>
       </div>
     </>

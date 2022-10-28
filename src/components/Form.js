@@ -7,7 +7,7 @@ const Form = () => {
         <form
           action="https://formspree.io/f/mgeqzzzv"
           method="POST"
-          className="flex flex-col w-full bg-gradient-to-b from-black/70 to-gray-800/70 p-8 text-white rounded-lg mt-32 mb-32 backdrop-blur-sm shadow-md hover:scale-101 duration-200 hover:shadow-blue-300"
+          className="flex flex-col w-full bg-gradient-to-b from-black/70 to-gray-900/70 p-8 text-white rounded-lg mt-32 mb-32 backdrop-blur-sm shadow-sm hover:scale-101 duration-200 hover:shadow-blue-300"
         >
           <input
             type="text"
