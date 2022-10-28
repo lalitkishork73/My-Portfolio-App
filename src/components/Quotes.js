@@ -22,7 +22,7 @@ const Quotes = () => {
   return (
     <>
       <div className="flex flex-col h-auto w-auto text-white text-center mt-24">
-        <h1 className="text-2xl font-bold">Quotes of The Day</h1>
+        <h1 className="text-2xl font-bold text-yellow-500">Quotes</h1>
         <div className="flex justify-center">
           <div className="flex flex-col justi items-center p-3 bg-black/20 rounded-lg flex-shrink hover:scale-110 m-2 duration-200 text-center">
             <h1 className="font-bold text-md p-3">" {api.content} "</h1>

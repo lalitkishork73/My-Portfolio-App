@@ -2,6 +2,8 @@ import React from "react";
 import ParticleBG from "../components/ParticleBG.js";
 import Quotes from "../components/Quotes.js";
 import HomesVisit from "../components/HomesVisit.js";
+import SocialTab from "../components/SocialTab.js";
+
 
 const Home = () => {
   return (
@@ -10,6 +12,9 @@ const Home = () => {
         <ParticleBG />
         <HomesVisit />
         <Quotes />
+        <SocialTab />
+       
+        
       </div>
     </>
   );
