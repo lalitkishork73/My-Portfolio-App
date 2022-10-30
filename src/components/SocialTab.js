@@ -1,10 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import SocData from "../Data/SocialData.js";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
 
 function SocialTab() {
+    useEffect(()=>{
+      {
+        AOS.init({duration : 1000})
+      }
+    })
   return (
     <>
-     <div className="h-24 w-full flex justify-center items-center">
+     <div data-aos="fade-up" className="h-auto p-5 w-full flex justify-center items-center mt-16 mb-12">
           <div className="bg-black/70 flex w-auto rounded-lg pl-5 pr-5">
           {
           SocData.map((item) => (

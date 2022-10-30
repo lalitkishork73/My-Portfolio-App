@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <div className="w-full bg-fixed ">
-        <ParticleBG />
+        <ParticleBG />   
         <HomesVisit />
         <Quotes />
         <SocialTab />

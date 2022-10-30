@@ -38,11 +38,11 @@ const Education = () => {
                         <p className="text-sm font-bold">{Department}</p>
                         <p className="text-sm font-bold">{Duration}</p>
                       </div>
-                      <div>
+                      <div className="flex items-center justify-center">
                         <img
                           src={src}
                           alt=""
-                          className="w-20 mx-auto rounded-lg ml-4  items-center"
+                          className="w-20 mx-auto rounded-lg ml-4"
                         />
                       </div>
                     </div>

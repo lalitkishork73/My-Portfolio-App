@@ -1,9 +1,10 @@
 import React from 'react'
 import proimg from "../assets/lalitgray.png";
+
 const HomesVisit = () => {
   return (
     <>
-      <div className="max-w-screen-lg mx-auto flex flex-col  items-center justify-center  h-full md:flex-row w-full mt-24">
+      <div className="max-w-screen-xl mx-auto flex flex-col  items-center justify-center  h-1/2 md:flex-row w-full mt-24">
         <div className=" flex flex-col flex-auto justify-center h-auto w-full p-5 animate__animated animate__fadeInLeft ">
           <h1 className="text-white text-4xl font-bold">
             <span className="text-teal-400 ">न</span>
@@ -32,11 +33,11 @@ const HomesVisit = () => {
           </div>
         </div>
 
-        <div className="p-5 w-full animate__animated animate__fadeInRight">
+        <div className="p-5 md:p-24 w-full animate__animated animate__fadeInRight">
           <img
             src={proimg}
             alt="my profile"
-            className="hover:shadow-blue-500 rounded-full border-2 border-t-teal-500  border-r-yellow-500 border-b-teal-500 border-l-0 mx-auto w-2/3 md:w-full "
+            className="hover:shadow-blue-500 rounded-full border-2 border-t-teal-500  border-r-yellow-500 border-b-teal-500 border-l-0 mx-auto w-2/3 md:w-full"
           />
         </div>
       </div>
