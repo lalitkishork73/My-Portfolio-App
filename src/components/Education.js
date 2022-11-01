@@ -42,7 +42,7 @@ const Education = () => {
                         <img
                           src={src}
                           alt=""
-                          className="w-20 mx-auto rounded-lg ml-4"
+                          className="w-20 mx-auto rounded-lg ml-4 mr-2"
                         />
                       </div>
                     </div>
