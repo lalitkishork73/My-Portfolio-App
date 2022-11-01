@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.3.3",
     "redux": "^4.2.0",
+    "serve": "^14.0.1",
     "simple-icons": "^7.17.0",
     "tsparticles": "^2.3.4",
     "web-vitals": "^2.1.4"

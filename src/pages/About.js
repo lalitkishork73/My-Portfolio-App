@@ -8,7 +8,6 @@ const About = () => {
   return (
     <>
       <div className="flex flex-col">
-        <ParticleBG />
         <AboutMe />
         <Education />
         <Skils />

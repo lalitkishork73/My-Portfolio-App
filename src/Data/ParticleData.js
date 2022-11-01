@@ -1,25 +1,16 @@
 const Op = {
   autoPlay: true,
-  background: {
-    color: {
-      value: "#000000",
-    },
-    image: "",
-    position: "",
-    repeat: "",
-    size: "",
-    opacity: 1,
-  },
-  backgroundMask: {
-    composite: "destination-out",
-    cover: {
-      color: {
-        value: "#fff",
-      },
-      opacity: 1,
-    },
-    enable: false,
-  },
+  // background: {
+  //   color: {
+  //     value: "#000000",
+  //   },
+  //   image: "",
+  //   position: "",
+  //   repeat: "",
+  //   size: "",
+  //   opacity: 0,
+  // },
+  
   fullScreen: {
     enable: true,
     zIndex: -1,
@@ -45,7 +36,7 @@ const Op = {
         mode: "trail",
         parallax: {
           enable: false,
-          force: 2,
+          force: 9,
           smooth: 10,
         },
       },
@@ -64,7 +55,7 @@ const Op = {
         distance: 200,
       },
       bubble: {
-        distance: 200,
+        distance: 500,
         duration: 0.4,
         mix: false,
         divs: {
@@ -119,7 +110,7 @@ const Op = {
         radius: 200,
       },
       trail: {
-        delay: 0.005,
+        delay: 0.00005,
         pauseOnStop: true,
         quantity: 5,
         particles: {
@@ -127,7 +118,7 @@ const Op = {
             value: "#ff0000",
             animation: {
               enable: true,
-              speed: 400,
+              speed: 900,
               sync: true,
             },
           },
@@ -471,7 +462,7 @@ const Op = {
         enable: false,
         value: 0,
       },
-      mode: "vertical",
+      mode: "horizontal",
       speed: 25,
     },
     tilt: {

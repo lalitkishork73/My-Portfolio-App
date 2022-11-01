@@ -1,16 +1,16 @@
 import React from "react";
-import lalit from "../assets/lalitcolor.png";
+
 
 function AboutMe() {
   return (
     <>
-      <section className=" bg-gradient-to-b from-black to-gray-800 text-white">
-        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full md:flex-row h-full">
-          <div className="p-5 w-full">
+      <section className=" bg-transparent text-white">
+        <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center w-full md:flex-row h-full">
+          <div className="md:p-24 w-full">
             <img
-              src={lalit}
+              src={"https://images.pexels.com/photos/14261372/pexels-photo-14261372.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
               alt="logo"
-              className="hover:shadow-blue-500 rounded-full border-2 border-t-teal-500  border-l-yellow-500 border-b-teal-500 border-r-0 mx-auto w-2/3 md:w-full shadow-lg hover:scale-105 duration-500 bg-gradient-to-t from-green-400 to-blue-500 mt-20"
+              className="hover:shadow-blue-200 rounded-3xl border-2 border-t-teal-500  border-l-yellow-500 border-b-teal-500 border-r-0 mx-auto w-2/3 md:w-full shadow-lg hover:scale-105 duration-500 bg-[linear-gradient(360deg,_#009B48_33.333%,_#FFF_33.333%_66.666%,_#FF7900_33.333%)] backdrop-blur-lg mt-20"
             />
           </div>
           <div className="w-full">

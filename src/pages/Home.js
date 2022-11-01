@@ -8,13 +8,12 @@ import SocialTab from "../components/SocialTab.js";
 const Home = () => {
   return (
     <>
+
       <div className="w-full bg-fixed ">
-        <ParticleBG />   
+        <ParticleBG />
         <HomesVisit />
         <Quotes />
         <SocialTab />
-       
-        
       </div>
     </>
   );

@@ -60,7 +60,7 @@ const techs = [
   },
   {
     id: 9,
-    src: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+    src: "https://img.icons8.com/nolan/344/github.png",
     title: "GitHub",
     style: "shadow-blue-600",
     url:"https://github.com/lalitkishork73"

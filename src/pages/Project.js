@@ -6,12 +6,10 @@ const Project = () => {
 
   return (
     <>
-      <ParticleBG />
       <ProjctHead />
-      <div className=""> 
+      <div className="">
 
       </div>
-
     </>
   );
 };

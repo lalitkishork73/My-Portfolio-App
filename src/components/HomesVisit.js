@@ -37,7 +37,7 @@ const HomesVisit = () => {
           <img
             src={proimg}
             alt="my profile"
-            className="hover:shadow-blue-500 rounded-full border-2 border-t-teal-500  border-r-yellow-500 border-b-teal-500 border-l-0 mx-auto w-2/3 md:w-full"
+            className="hover:shadow-blue-500 rounded-3xl border-2 border-t-teal-500  border-r-yellow-500 border-b-teal-500 border-l-0 mx-auto w-2/3 md:w-full"
           />
         </div>
       </div>
