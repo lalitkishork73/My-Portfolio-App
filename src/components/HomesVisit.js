@@ -33,11 +33,11 @@ const HomesVisit = () => {
           </div>
         </div>
 
-        <div className="p-5 md:p-24 w-full animate__animated animate__fadeInRight">
+        <div className="p-5 md:p-24 w-full animate__animated animate__fadeInRight ">
           <img
             src={proimg}
             alt="my profile"
-            className="hover:shadow-blue-500 rounded-3xl border-2 border-t-teal-500  border-r-yellow-500 border-b-teal-500 border-l-0 mx-auto w-2/3 md:w-full"
+            className="rounded-3xl border-2 border-t-teal-500  border-r-yellow-500 border-b-teal-500 border-l-0 mx-auto w-2/3 md:w-full"
           />
         </div>
       </div>
