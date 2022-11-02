@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between bg-transparent backdrop-blur-sm text-white p-4   ">
+      <div className="flex justify-between bg-transparent text-white p-4   ">
         <div>
           <h1 className="font-signature text-4xl font-bold ">
             <span className="text-yellow-500 ">L</span>alit
@@ -22,7 +22,7 @@ const Navbar = () => {
         <nav>
           <div>
             <FaBars
-              className="md:hidden text-2xl releaive animate-bounce"
+              className="md:hidden text-2xl releaive animate-spin"
               onClick={showMenu}
             />
           </div>

@@ -9,7 +9,7 @@ const MenuBar = ({ showMenu, active }) => {
         <ul
           className={
             active
-              ? "block  py-6 fixed inset-0 z-10 uppercase bg-black/20 backdrop-blur-lg md:hidden"
+              ? "block  py-6 fixed inset-0 z-10 uppercase bg-black/20 backdrop-blur-lg md:hidden "
               : "hidden"
           }
         >

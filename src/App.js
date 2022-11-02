@@ -12,7 +12,7 @@ function App() {
     <>
 
       <BrowserRouter>
-        <Navbar />
+        <Navbar className="z-10"/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
