@@ -25,7 +25,7 @@ const Education = () => {
                   }) => (
                     <div
                       key={id}
-                      className={`shadow-md hover:scale-110 duration-200 rounded-lg hover:shadow-cyan-500 p-8 my-5 w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center md:text-left   sm:px-0`}
+                      className={`shadow-md hover:scale-110 duration-200 rounded-lg hover:shadow-cyan-500 p-8 my-5 w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center  sm:px-0`}
                     >
                       
                       <div className="pl-2">
