@@ -1,5 +1,5 @@
 {
-  "name": "my-navbar",
+  "name": "my-PortFolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +20,7 @@
     "redux": "^4.2.0",
     "serve": "^14.0.1",
     "simple-icons": "^7.17.0",
+    "styled-components": "^5.3.6",
     "tsparticles": "^2.3.4",
     "web-vitals": "^2.1.4"
   },
