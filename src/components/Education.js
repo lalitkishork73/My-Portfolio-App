@@ -42,6 +42,7 @@ const Education = () => {
                           src={src}
                           alt=""
                           className="w-20 mx-auto rounded-lg ml-4 mr-2"
+                          draggable="false"
                         />
                       </div>
                     </div>

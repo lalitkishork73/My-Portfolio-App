@@ -28,7 +28,7 @@ const Skils = () => {
                 >
                   <a href={url} >
 
-                    <img src={src} alt="" className={`w-20 mx-auto shadow-md hover:scale-105 duration-500 py-2 rounded-lg `} />
+                    <img src={src} alt="" draggable="false" className={`w-20 mx-auto shadow-md hover:scale-105 duration-500 py-2 rounded-lg `} />
                     <p className="mt-4">{title}</p>
                   </a>
                 </div>

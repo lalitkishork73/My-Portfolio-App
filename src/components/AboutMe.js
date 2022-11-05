@@ -11,6 +11,7 @@ function AboutMe() {
               src={"https://images.pexels.com/photos/14261372/pexels-photo-14261372.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
               alt="logo"
               className="hover:shadow-blue-200 rounded-3xl border-2 border-t-teal-500  border-l-yellow-500 border-b-teal-500 border-r-0 mx-auto w-2/3 md:w-full shadow-lg hover:scale-105 duration-500 bg-[linear-gradient(360deg,_#009B48_33.333%,_#FFF_33.333%_66.666%,_#FF7900_33.333%)] backdrop-blur-lg mt-20"
+              draggable="false"
             />
           </div>
           <div className="w-full">
