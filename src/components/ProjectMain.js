@@ -1,29 +1,21 @@
-import React, { useState,useEffect } from 'react'
-import { GrFormPrevious, GrFormNext } from "react-icons/gr"
-import ReactPlayer from "react-player"
+import React from 'react'
 import ProjectData from "../Data/ProjectData";
-import styled from "styled-components";
-
+import { useMotionValue, useTransform, motion } from
+    'framer-motion';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Keyboard, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/effect-coverflow';
+import styled from 'styled-components';
 
 
 
 
 function ProjectMain() {
-    let [num, setNum] = useState(0);
-    let [effect,setEffect]= useState()
-    let limit = ProjectData.length;
-    const Previous = () => {
-        setNum(num - 1)
-        if (num < 0) {
-            setNum(limit)
-        }
-    }
-    const Next = () => {
-        setNum(num + 1)
-        if (num > limit) {
-            setNum(0)
-        }
-    }
+
     const Circle = styled.div`
     position:absolute;
     width:300px;
@@ -33,60 +25,100 @@ function ProjectMain() {
     z-index:0;
     background-color:#fbbe01;
     border-radius:50%;
-    
+    transition: background-color 0.5s ease;
+    box-shadow: 10px -10px 15px 10px green;
     `;
+    const Circle1 = styled.div`
+    position:absolute;
+    width:300px;
+    height:300px;
+    bottom:-4.2em;
+    left:-10em;
+    z-index:0;
+    background-color:#fbbe01;
+    border-radius:20%;
+    transform: rotate(45deg);
+    `;
+
     return (
         <>
-            <div className="bg-black/70 backdrop-blur-md grid  grid-cols-1 grid-row-2 md:grid-cols-3 md:grid-rows-2 gap-4 place-content-stretch mt-5 mb-5 border-2 rounded-xl p-5 h-auto max-w-screen-xl">
-                <div className="relative box md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 pb-[56.22%]">
-                    {/*   <video src={vid} className="rounded-xl w-auto h-auto" controls autoPlay loop clipboard-write encrypted-media gyroscope picture-in-picture allowFullScreen
-              title="Embedded youtube" /> */}
-                    {/*  <ReactPlayer
-              url="https://youtu.be/LIIDh-qI9oI?list=RDLIIDh-qI9oI"
-              className="rounded-xl w-auto h-auto"
-              width={"auto"}
-              height={"auto"}
-              playing={"true"}
-              
-            /> */}
-                    <iframe
-                        width="100%"
-                        height="100%"
-                        src={ProjectData[num].videoLink}
-                        title="The Weeknd & Ariana Grande - Save Your Tears (Remix) (Official Video)"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                        className="absolute inset-0 top-0 left-0 w-[100%] h-[100%] rounded-xl"
-                    ></iframe>
-                </div>
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Keyboard, Autoplay]}
 
-                <div className="relative box md:row-start-1 md:row-end-3 border-[4px]  border-white rounded-xl bg-[#e4dfdc] text-white flex flex-col h-full p-2 md:w-auto overflow-hidden top-0 left-0 ">
-                    <Circle />
-                    <div className="z-10 h-full flex flex-col justify-between p-1  ">
-                        <div className=" p-1 h-auto flex flex-col  ">
-                            <div className={`p-1 w-full`}>
-                                <h3 className="text-center font-extrabold text-black">{ProjectData[num].projectName}</h3>
-                                <p className="text-sm p-1 text-justify ">
-                                    {ProjectData[num].description}
-                                </p>
-                            </div>
-                        </div>
-                        <div className="p-1">
-                            <div className="flex justify-center p-2 w-auto">
-                                <button className="p-2 bg-yellow-500 rounded-l-lg w-auto text-center">Visit</button>
-                                <button className="p-2 bg-yellow-500 rounded-r-lg w-auto text-center">Code</button>
-                            </div>
-                            <div className="flex justify-around p-2 w-auto">
-                                <button className="p-2 bg-yellow-500 rounded-l-md w-auto text-center" onClick={Previous}><GrFormPrevious /></button>
-                                <button className="p-2 bg-yellow-500 rounded-r-md w-auto text-center" onClick={Next}><GrFormNext /></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-           
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                slidesPerView={"auto"}
+                effect="coverflow"
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                }}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: true,
+                }}
+                keyboard={{
+                    enabled: true,
+                }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+                className="w-[100%] max-w-screen-xl"
+            >
+                {
+                    ProjectData.map((items) => (
+                        < SwiperSlide key={items.id}>
+                            <div
+                                className="bg-black/70 backdrop-blur-sm grid  grid-cols-1 grid-row-2 md:grid-cols-3 md:grid-rows-2 gap-4 place-content-center mt-5 mb-5 border-2 rounded-xl p-5 h-auto ">
+                                <div className="relative box md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 pb-[56.22%]">
+                                    <iframe
+                                        width="100%"
+                                        height="100%"
+                                        src={items.videoLink}
+                                        title={items.projectName}
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                        className="absolute inset-0 top-0 left-0 w-[100%] h-[100%] rounded-xl"
+                                    ></iframe>
+                                </div>
+
+                                <div className="relative box md:row-start-1 md:row-end-3 border-[4px]  border-white rounded-xl bg-[#313030] text-white flex flex-col h-full p-2 md:w-auto overflow-hidden top-0 left-0 ">
+                                    <Circle />
+                                    <Circle1/>
+                                    <div className="z-10 h-full flex flex-col justify-between p-1  ">
+                                        <div className=" p-1 h-auto flex flex-col  ">
+                                            <div className={`p-1 w-full`}>
+                                                <h3 className="text-center font-extrabold">{items.projectName}</h3>
+                                                <p className="text-sm font-bold p-1 text-justify  ">
+                                                    {items.description}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="p-1">
+                                            <div className="flex justify-center p-2 w-auto">
+                                                <a href={items.visitSite} ><button className="p-2 bg-yellow-500 rounded-l-lg w-auto text-center">Visit</button></a>
+                                                <a href={items.viewCode} ><button className="p-2 bg-yellow-500 rounded-r-lg w-auto text-center">Code</button></a>   
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </SwiperSlide>
+                    ))
+                }
+
+            </Swiper>
+
+
         </>
     )
 }
