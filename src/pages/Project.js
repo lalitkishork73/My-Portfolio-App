@@ -23,9 +23,8 @@ const Project = () => {
   return (
     <>
       <ProjctHead />
-      <div className="relative overflow-clip   bg-slate-200 w-full flex flex-col justify-center items-center">
-        <Circle style={{left:0}}/>
-      
+      <div className="relative overflow-clip w-full flex flex-col justify-center items-center">
+        <Circle/>
         <ProjectMain />
       </div>
 
