@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const Quotes = () => {
   let API = "http://api.quotable.io/random";
@@ -18,7 +17,6 @@ const Quotes = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 })
     fetchApiData(API);
   }, []);
 

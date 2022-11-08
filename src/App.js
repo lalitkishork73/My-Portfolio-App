@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.js";
 import Home from "./pages/Home.js";
@@ -6,13 +6,19 @@ import Contact from "./pages/Contact.js";
 import About from "./pages/About.js";
 import Project from "./pages/Project.js";
 import Footer from "./components/Footer.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1100 })
+    AOS.refresh()
+  }, []);
   return (
     <>
 
       <BrowserRouter>
-        <Navbar className="z-10"/>
+        <Navbar className="z-10" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

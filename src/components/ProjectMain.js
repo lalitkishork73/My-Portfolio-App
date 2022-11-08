@@ -27,18 +27,7 @@ function ProjectMain() {
     transition: background-color 0.5s ease;
     box-shadow: 10px -10px 15px 10px green;
     `;
-    const Circle1 = styled.div`
-    position:absolute;
-    width:300px;
-    height:300px;
-    bottom:-4.2em;
-    left:-10em;
-    z-index:0;
-    background-color:#fbbe01;
-    border-radius:20%;
-    transform: rotate(45deg);
-    `;
-
+    
     return (
         <>
             <Swiper

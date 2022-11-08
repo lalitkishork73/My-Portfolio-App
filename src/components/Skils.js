@@ -1,12 +1,9 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import techs from '../Data/SkilsData.js';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const Skils = () => {
-  useEffect(()=>{
-    AOS.init({ duration: 1000 })
-  },[])
+ 
   return (
     <>
       <section>
