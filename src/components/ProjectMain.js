@@ -69,9 +69,9 @@ function ProjectMain() {
                                         height="100%"
                                         src={items.videoLink}
                                         title={items.projectName}
-                                        frameborder="0"
+                                        frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen
+                                        allowFullScreen
                                         className="absolute inset-0 top-0 left-0 w-[100%] h-[100%] rounded-xl"
                                     ></iframe>
                                 </div>
