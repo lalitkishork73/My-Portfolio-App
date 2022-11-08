@@ -15,8 +15,8 @@ const ProjctHead = () => {
           />
           <div className="w-full h-full absolute flex justify-center items-center text-white top-0">
             <div className="flex flex-col p-5">
-              <h1 className="font-bold text-4xl text-center mb-6">
-                <span className="text-cyan-500 font-extrabold">W</span>elcome To Projects 
+              <h1 className="font-bold text-4xl text-center mb-6 animate__animated animate__fadeInUp">
+                <span className="text-cyan-500 font-extrabold ">W</span>elcome To Projects 
               </h1>
               <div className="flex justify-center">
                <p>Project hepls you to understand new concepts!</p>

@@ -1,7 +1,6 @@
 import React from 'react'
 import ProjectData from "../Data/ProjectData";
-import { useMotionValue, useTransform, motion } from
-    'framer-motion';
+
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Keyboard, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

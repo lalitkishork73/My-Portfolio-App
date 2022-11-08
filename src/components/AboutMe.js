@@ -5,8 +5,8 @@ function AboutMe() {
   return (
     <>
       <section className=" bg-transparent text-white">
-        <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center w-full md:flex-row h-full">
-          <div className="md:p-24 w-full">
+        <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center w-full md:flex-row h-full ">
+          <div className="md:p-24 w-full animate__animated animate__flipInX ">
             <img
               src={"https://images.pexels.com/photos/14261372/pexels-photo-14261372.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
               alt="logo"
@@ -14,7 +14,7 @@ function AboutMe() {
               draggable="false"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full animate__animated animate__fadeInRight ">
             <p className="text-sm p-3 text-justify">
               Hi, I am LalitKishor Kanojiya, I lives in Surat. I am Electronics
               and Communication & Software Engineer. I have been completed

@@ -2,6 +2,7 @@ import React from "react";
 import Form from "../components/Form.js";
 import ContcDetl from "../components/ContcDetl.js";
 
+
 const Contact = () => {
   return (
     <>

@@ -1,8 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import techs from '../Data/SkilsData.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skils = () => {
-
+  useEffect(()=>{
+    AOS.init({ duration: 1000 })
+  },[])
   return (
     <>
       <section>
@@ -24,6 +28,7 @@ const Skils = () => {
               {techs.map(({ id, src, title, url }) => (
                 <div
                   key={id}
+                  data-aos="flip-left"
 
                 >
                   <a href={url} >

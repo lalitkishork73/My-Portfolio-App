@@ -3,7 +3,9 @@ import React from 'react'
 const Form = () => {
   return (
     <>
-      <div className="w-full sm:p-5 flex md:flex-col ">
+      <div className="w-full sm:p-5 flex md:flex-col animate__animated animate__fadeInLeft" 
+      
+      >
         <form
           action="https://formspree.io/f/mgeqzzzv"
           method="POST"

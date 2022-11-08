@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWindowClose } from "react-icons/fa";
-import { NavLink,Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const MenuBar = ({ showMenu, active }) => {
   return (

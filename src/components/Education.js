@@ -1,6 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import edu from "../Data/EducData.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Education = () => {
+  useEffect(()=>{
+    AOS.init({ duration: 1500 })
+  },[])
 
   return (
     <>
@@ -25,7 +30,8 @@ const Education = () => {
                   }) => (
                     <div
                       key={id}
-                      className={`shadow-md hover:scale-110 duration-200 rounded-lg hover:shadow-cyan-500 p-8 my-5 w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center  sm:px-0`}
+                      data-aos="zoom-in-up"
+                      className={`shadow-sm hover:scale-120 duration-200 rounded-lg hover:shadow-cyan-500 p-8 my-5 w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center  sm:px-0` }
                     >
                       
                       <div className="pl-2">
