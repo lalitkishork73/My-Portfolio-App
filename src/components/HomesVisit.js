@@ -1,10 +1,17 @@
 import React from 'react'
 import proimg from "../assets/lalitgray.png";
+import { useMotionValue, useTransform, motion } from
+  'framer-motion';
+import { Link } from "react-router-dom";
 
 const HomesVisit = () => {
+  const x = useMotionValue(0)
+  const y = useMotionValue(0)
+  const rotateX = useTransform(y, [-100, 100], [30, -30])
+  const rotateY = useTransform(x, [100, -100], [-30, 30])
   return (
     <>
-      <div className="max-w-screen-xl mx-auto flex flex-col  items-center justify-center  h-1/2 md:flex-row w-full mt-24">
+      <div className="max-w-screen-xl mx-auto flex flex-col  items-center justify-center  h-1/2 md:flex-row w-full">
         <div className=" flex flex-col flex-auto justify-center h-auto w-full p-5 animate__animated animate__fadeInLeft ">
           <h1 className="text-white text-4xl font-bold">
             <span className="text-teal-400 ">न</span>
@@ -27,19 +34,27 @@ const HomesVisit = () => {
           </h3>
 
           <div className="p-2">
-            <button className="p-3 text-white border-2 hover:bg-teal-400 rounded-md hover:font-bold hover:border-2 hover:border-teal-400">
-              Contact Me
-            </button>
+            <Link to='contact'>
+              <button className="p-3 text-white border-2 hover:bg-teal-400 rounded-md hover:font-bold hover:border-2 hover:border-teal-400">
+                Contact Me
+              </button></Link>
           </div>
         </div>
 
         <div className="p-5 md:p-24 w-full animate__animated animate__fadeInRight ">
-          <img
-            src={proimg}
-            alt="my profile"
-            className="rounded-3xl border-2 border-t-teal-500  border-r-yellow-500 border-b-teal-500 border-l-0 mx-auto w-2/3 md:w-full"
-            draggable="false"
-          />
+          <motion.div style={{ x, y, rotateX, rotateY, z: 100000 }}
+            drag
+            dragElastic={0.18}
+            dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+            whileTap={{ cursor: 'grabbing' }}
+            className='rounded-3xl backdrop-blur-md'>
+            <img
+              src={proimg}
+              alt="my profile"
+              className="rounded-3xl border-2 border-t-slate-500 border-b-slate-600 border-r-slate-500 border-l-0 mx-auto w-2/3 md:w-full bg-white/10"
+              draggable="false"
+            />
+          </motion.div>
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import MenuBar from "./MenuBar.js";
 
@@ -15,9 +15,10 @@ const Navbar = () => {
     <>
       <div className="flex justify-between bg-transparent text-white p-4   ">
         <div>
-          <h1 className="font-signature text-4xl font-bold ">
-            <span className="text-yellow-500 ">L</span>alit
+          <Link to='/contact'> <h1 className="font-signature text-4xl font-bold ">
+           <span className="text-yellow-500 ">L</span>alit
           </h1>
+          </Link>
         </div>
         <nav>
           <div>

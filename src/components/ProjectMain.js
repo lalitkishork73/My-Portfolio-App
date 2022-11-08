@@ -95,15 +95,15 @@ function ProjectMain() {
                                         <div className=" p-1 h-auto flex flex-col  ">
                                             <div className={`p-1 w-full`}>
                                                 <h3 className="text-center font-extrabold">{items.projectName}</h3>
-                                                <p className="text-sm font-bold p-1 text-justify  ">
+                                                <p className="text-sm font-semibold p-1 text-justify  ">
                                                     {items.description}
                                                 </p>
                                             </div>
                                         </div>
                                         <div className="p-1">
                                             <div className="flex justify-center p-2 w-auto">
-                                                <a href={items.visitSite} ><button className="p-2 bg-yellow-500 rounded-l-lg w-auto text-center">Visit</button></a>
-                                                <a href={items.viewCode} ><button className="p-2 bg-yellow-500 rounded-r-lg w-auto text-center">Code</button></a>   
+                                                <a href={items.visitSite} ><button className="p-2 border-l-2 rounded-l-lg w-auto text-center hover:bg-gradient-to-r from-black via-gray-900 to-gray-700 hover:font-semibold">Visit</button></a>
+                                                <a href={items.viewCode} ><button className="p-2 border-r-2 rounded-r-lg w-auto text-center hover:bg-gradient-to-r from-gray-700 via-gray-900 to-black border-l-2 hover:font-semibold">Code</button></a>   
                                             </div>
 
                                         </div>

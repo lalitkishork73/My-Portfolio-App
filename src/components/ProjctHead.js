@@ -16,12 +16,10 @@ const ProjctHead = () => {
           <div className="w-full h-full absolute flex justify-center items-center text-white top-0">
             <div className="flex flex-col p-5">
               <h1 className="font-bold text-4xl text-center mb-6">
-                Welcome To Projects Session
+                <span className="text-cyan-500 font-extrabold">W</span>elcome To Projects 
               </h1>
               <div className="flex justify-center">
-                <button className="p-3 text-white border-2 hover:bg-teal-400 rounded-md hover:font-bold hover:border-2 hover:border-teal-400">
-                  Contact Me
-                </button>
+               <p>Project hepls you to understand new concepts!</p>
               </div>
             </div>
           </div>
