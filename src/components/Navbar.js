@@ -23,7 +23,7 @@ const Navbar = () => {
         <nav>
           <div>
             <FaBars
-              className="md:hidden text-2xl releaive animate-spin"
+              className="md:hidden text-2xl releaive hover:animate-spin"
               onClick={showMenu}
             />
           </div>

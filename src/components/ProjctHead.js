@@ -19,7 +19,7 @@ const ProjctHead = () => {
                 <span className="text-cyan-500 font-extrabold ">W</span>elcome To Projects 
               </h1>
               <div className="flex justify-center">
-               <p>Project hepls you to understand new concepts!</p>
+               <p className="text-center">Project hepls you to understand new concepts!</p>
               </div>
             </div>
           </div>
