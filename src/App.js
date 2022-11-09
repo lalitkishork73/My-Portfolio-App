@@ -11,11 +11,15 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
-    AOS.init({ 
-      offset:120,
-      duration:900 })
-    
+    AOS.init({
+      offset: 120,
+      duration: 900
+    })
+
+    AOS.refreshHard()
+
   }, []);
+
   return (
     <>
 

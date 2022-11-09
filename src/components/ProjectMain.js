@@ -76,7 +76,7 @@ function ProjectMain() {
                                     ></iframe>
                                 </div>
 
-                                <div className="relative box md:row-start-1 md:row-end-3 border-[4px]  border-white/10 rounded-xl bg-[#313030]/10 text-white flex flex-col h-full p-2 md:w-auto overflow-hidden top-0 left-0 ">
+                                <div className="relative box md:row-start-1 md:row-end-3 border-[4px]  border-white/10 rounded-xl bg-gray-100/10 text-white flex flex-col h-full p-2 md:w-auto overflow-hidden top-0 left-0 ">
                                     <Circle />
                     
                                     <div className="z-10 h-full flex flex-col justify-between p-1  ">
