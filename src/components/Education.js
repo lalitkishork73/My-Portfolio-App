@@ -4,7 +4,9 @@ import edu from "../Data/EducData.js";
 const Education = () => {
   return (
     <>
-      <section className="bg-transparent">
+      <section
+
+        className="bg-transparent">
         <div className="max-w-screen-lg mx-auto p-1 flex flex-col justify-center w-full h-full text-white">
           <div className="p-1">
             <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
@@ -24,8 +26,8 @@ const Education = () => {
                     University,
                   }) => (
                     <div
+                      data-aos="slide-right"
                       key={id}
-                      data-aos="zoom-in-up"
                       className={`shadow-sm hover:scale-120 duration-200 rounded-lg hover:shadow-cyan-500 p-8 my-5 w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center  sm:px-0`}
                     >
 

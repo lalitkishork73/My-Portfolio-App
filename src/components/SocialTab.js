@@ -7,7 +7,9 @@ function SocialTab() {
     
   return (
     <>
-     <div data-aos="fade-up" className="h-auto p-5 w-full flex justify-center items-center mt-16 mb-12">
+     <div
+     data-aos="slide-up"  
+      className="h-auto p-5 w-full flex justify-center items-center mt-2">
           <div className="flex w-auto rounded-lg pl-5 pr-5">
           {
           SocData.map((item) => (

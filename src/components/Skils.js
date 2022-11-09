@@ -3,7 +3,7 @@ import techs from '../Data/SkilsData.js';
 
 
 const Skils = () => {
- 
+
   return (
     <>
       <section>
@@ -25,12 +25,12 @@ const Skils = () => {
               {techs.map(({ id, src, title, url }) => (
                 <div
                   key={id}
-                  data-aos="flip-left"
-
+                  data-aos="slide-left"
                 >
-                  <a href={url} >
-
-                    <img src={src} alt="" draggable="false" className={`w-20 mx-auto shadow-md hover:scale-105 duration-500 py-2 rounded-lg `} />
+                  <a href={url}
+                  >
+                    <img
+                      src={src} alt="" draggable="false" className={`w-20 mx-auto shadow-md py-2 rounded-lg `} />
                     <p className="mt-4">{title}</p>
                   </a>
                 </div>

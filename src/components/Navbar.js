@@ -28,7 +28,7 @@ const Navbar = () => {
             />
           </div>
           <ul className="hidden md:flex gap-8 p-1 uppercase">
-            <li className="hover:bg-yellow hover:scale-105 duration-200 active:border-t-4 border-teal-400">
+            <li className="hover:bg-yellow hover:scale-105 duration-200 border-teal-400">
               <NavLink
                 className="m-4 hover:text-teal-400 hover:font-bold"
                 to="/"
