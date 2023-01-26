@@ -51,7 +51,7 @@ const HomesVisit = () => {
             <img
               src={proimg}
               alt="my profile"
-              className="rounded-3xl border-2 border-t-slate-500 border-b-slate-600 border-r-slate-500 border-l-0 mx-auto w-2/3 md:w-full bg-white/10"
+              className="rounded-3xl border-2 border-t-slate-500 border-b-slate-600 border-r-slate-500 border-l-0 mx-auto w-2/3 md:w-full bg-gray-400/10"
               draggable="false"
             />
           </motion.div>

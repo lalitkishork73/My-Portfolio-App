@@ -1,8 +1,8 @@
 import React from "react";
-import ParticleBG from "../components/ParticleBG.js";
-import Quotes from "../components/Quotes.js";
-import HomesVisit from "../components/HomesVisit.js";
-import SocialFlot from "../components/SocialFlot.js";
+import ParticleBG from "../components/ParticleBG.jsx";
+import Quotes from "../components/Quotes.jsx";
+import HomesVisit from "../components/HomesVisit.jsx";
+import SocialFlot from "../components/SocialFlot.jsx";
 
 
 const Home = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import Form from "../components/Form.js";
-import ContcDetl from "../components/ContcDetl.js";
+import Form from "../components/Form.jsx";
+import ContcDetl from "../components/ContcDetl.jsx";
 
 
 const Contact = () => {

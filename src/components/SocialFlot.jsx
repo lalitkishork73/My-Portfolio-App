@@ -10,9 +10,8 @@ const SocialFlot = () => {
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 mr-[-100px] hover:ml-[-90px] hover:rounded-md duration-300 bg-gray-500/30" +
-              " " +
-              style
+              `flex justify-between items-center w-40 h-14 px-4 mr-[-100px] hover:ml-[-90px] hover:rounded-md duration-300 bg-gray-500/30"
+              ${style}`
             }
           >
             <a

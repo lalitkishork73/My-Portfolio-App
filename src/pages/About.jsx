@@ -1,8 +1,8 @@
 import React from "react";
-import Education from "../components/Education.js";
-import Skils from "../components/Skils.js";
-import ParticleBG from "../components/ParticleBG.js";
-import AboutMe from "../components/AboutMe.js";
+import Education from "../components/Education.jsx";
+import Skils from "../components/Skils.jsx";
+import ParticleBG from "../components/ParticleBG.jsx";
+import AboutMe from "../components/AboutMe.jsx";
 
 const About = () => {
   return (

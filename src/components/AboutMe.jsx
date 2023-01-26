@@ -15,7 +15,7 @@ function AboutMe() {
             />
           </div>
           <div className="w-full animate__animated animate__fadeInRight ">
-            <p className="text-sm p-3 text-justify">
+            <p className="text-md p-3 text-center">
               Hi, I am LalitKishor Kanojiya, I lives in Surat. I am Electronics
               and Communication & Software Engineer. I have been completed
               Bechlor's in Electronics and communication Engneering from Shri
@@ -23,7 +23,7 @@ function AboutMe() {
               Center Bardoli affiliated by Gujarat Technical University.
             </p>
             <br />
-            <p className="text-sm p-3 text-justify">
+            <p className="text-md font-normal p-3 text-center">
               I also learned Full-Stack web-development from Functionup
               Bootcamp. I have completed few Projects here. Now i am
               FullStack-Developer and creating wonderfull Website from both end

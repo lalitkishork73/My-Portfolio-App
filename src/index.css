@@ -10,5 +10,7 @@
     html{
         font-family: 'Raleway', sans-serif;
         background-color: black;
+        margin: 0;
+        padding: 0;
     }
 }

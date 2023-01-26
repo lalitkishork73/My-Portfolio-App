@@ -1,6 +1,6 @@
 import React from "react";
-import ProjctHead from "../components/ProjctHead.js";
-import ProjectMain from "../components/ProjectMain.js";
+import ProjctHead from "../components/ProjctHead.jsx";
+import ProjectMain from "../components/ProjectMain.jsx";
 import styled, { keyframes } from 'styled-components';
 
 const Project = () => {

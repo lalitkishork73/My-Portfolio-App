@@ -20,7 +20,7 @@ const links = [
         </>
       ),
       href: "https://github.com/lalitkishork73",
-      style: "",
+      style: "bg-gray-500/30",
     },
     {
       id: 3,

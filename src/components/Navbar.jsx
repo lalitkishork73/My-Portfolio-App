@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { NavLink,Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import MenuBar from "./MenuBar.js";
+import MenuBar from "./MenuBar.jsx";
 
 
 
