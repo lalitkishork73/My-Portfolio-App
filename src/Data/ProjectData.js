@@ -2,8 +2,8 @@ const ProjectData = [
   {
     id: 1,
     videoLink: `https://www.youtube.com/embed/LIIDh-qI9oI?list=RDLIIDh-qI9oI`,
-    projectName: "Block Management",
-    description: "You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:place-content-center to apply the place-content-center utility at only medium screen sizes and above.",
+    projectName: "Blog Management",
+    description: "Blog-management",
     viewCode: "https://www.google.co.in/",
     visitSite: "https://github.com/lalitkishork73"
   },
