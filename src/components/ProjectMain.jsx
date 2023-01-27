@@ -88,8 +88,8 @@ function ProjectMain() {
                                         </div>
                                         <div className="p-1">
                                             <div className="flex justify-center p-2 w-auto">
-                                                <a href={items.visitSite} ><button className="p-2 border-l-2 rounded-l-lg w-auto text-center hover:bg-gradient-to-r from-black via-gray-900 to-gray-700 hover:font-semibold">Visit</button></a>
-                                                <a href={items.viewCode} ><button className="p-2 border-r-2 rounded-r-lg w-auto text-center hover:bg-gradient-to-r from-gray-700 via-gray-900 to-black border-l-2 hover:font-semibold">Code</button></a>
+                                                <a href={items.visitSite} target="_blank"><button className="p-2 border-l-2 rounded-l-lg w-auto text-center hover:bg-gradient-to-r from-black via-gray-900 to-gray-700 hover:font-semibold" >Visit</button></a>
+                                                <a href={items.viewCode} target="_blank"><button className="p-2 border-r-2 rounded-r-lg w-auto text-center hover:bg-gradient-to-r from-gray-700 via-gray-900 to-black border-l-2 hover:font-semibold">Code</button></a>
                                             </div>
 
                                         </div>

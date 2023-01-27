@@ -14,22 +14,22 @@ const MenuBar = ({ showMenu, active }) => {
           }
         >
           <FaWindowClose onClick={showMenu} className="mx-4 scale-120 " />
-          <li className="hover:bg-black w-full py-3">
+          <li className="hover:bg-black w-full py-3" onClick={showMenu}>
             <NavLink className="m-4 hover:text-teal-400" to="/">
               Home
             </NavLink>
           </li>
-          <li className="hover:bg-black w-full py-3">
+          <li className="hover:bg-black w-full py-3" onClick={showMenu}>
             <NavLink className="m-4 hover:text-teal-400" to="/about">
               About
             </NavLink>
           </li>
-          <li className="hover:bg-black w-full py-3">
+          <li className="hover:bg-black w-full py-3" onClick={showMenu}>
             <NavLink className="m-4 hover:text-teal-400" to="/project">
               Project
             </NavLink>
           </li>
-          <li className="hover:bg-black w-full py-3">
+          <li className="hover:bg-black w-full py-3" onClick={showMenu}>
             <NavLink className="m-4 hover:text-teal-400" to="/contact">
               Contact
             </NavLink>

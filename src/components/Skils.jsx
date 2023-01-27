@@ -27,7 +27,7 @@ const Skils = () => {
                   key={id}
                   data-aos="fade-up"
                 >
-                  <a href={url}
+                  <a href={url} target="_blank"
                   >
                     <img
                       src={src} alt="" draggable="false" className={`w-20 mx-auto shadow-md py-2 rounded-lg `} />
