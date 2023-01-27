@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 
 const Quotes = () => {
 
-  let API = "http://api.quotable.io/random";
+  let API = "https://api.quotable.io/random";
   const [api, setApi] = useState([]);
 
   const fetchApiData = async (url) => {
