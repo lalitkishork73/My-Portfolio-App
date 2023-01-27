@@ -3,6 +3,10 @@ import ProjctHead from "../components/ProjctHead.jsx";
 import ProjectMain from "../components/ProjectMain.jsx";
 import styled, { keyframes } from 'styled-components';
 
+const breatheAnimation = keyframes`
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+`
 const Circle = styled.div`
 width: 100%;
   height: 100%;
@@ -14,10 +18,6 @@ width: 100%;
   animation-name: ${breatheAnimation};
   animation-duration: 1s;
   animation-iteration-count: infinite;`
-const breatheAnimation = keyframes`
-  0% {background-position: 0%}
-  100% {background-position: 100%}
-`
 
 const Project = () => {
 

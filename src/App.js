@@ -18,7 +18,7 @@ function App() {
 
     AOS.refreshHard()
 
-  }, [AOS]);
+  }, []);
 
   return (
     <>
