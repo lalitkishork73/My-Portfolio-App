@@ -25,7 +25,7 @@ const Skils = () => {
               {techs.map(({ id, src, title, url }) => (
                 <div
                   key={id}
-                  data-aos="slide-left"
+                  data-aos="fade-up"
                 >
                   <a href={url}
                   >

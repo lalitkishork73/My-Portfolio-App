@@ -26,7 +26,7 @@ const Education = () => {
                     University,
                   }) => (
                     <div
-                      data-aos="slide-right"
+                      data-aos="fade-up"
                       key={id}
                       className={`shadow-sm hover:scale-120 duration-200 rounded-lg hover:shadow-cyan-500 p-8 my-5 w-full grid grid-cols-1 sm:grid-cols-2 gap-8 text-center  sm:px-0`}
                     >
