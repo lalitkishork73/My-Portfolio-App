@@ -43,7 +43,7 @@ const ProjectData = [
     id: 6,
     videoLink: `https://www.youtube.com/embed/H5v3kku4y6Q?list=RDLIIDh-qI9oI`,
     projectName: "Web Application",
-    description: "This app is collection of multiple web applications based on pure html, css and javascript.",
+    description: "A multiple HTML, CSS, JavaScript web application is a platform built using a combination of HTML, CSS, and JavaScript technologies. It is a type of static web application that provides interactive and engaging user experiences, allowing users to interact with the website or application in real-time, making it easier to access information and perform tasks online.",
     viewCode: "https://github.com/lalitkishork73/Web_Assignments/tree/main",
     visitSite: "https://lalitkisho.000webhostapp.com/",
   },
